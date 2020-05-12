@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button, Typography } from 'antd';
+import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button, Typography, Table } from 'antd';
 import './App.css';
 
 const { Option } = Select;
@@ -10,7 +10,7 @@ const App = () => (
     <section style={{ textAlign: 'center', marginTop: 48, marginBottom: 60 }}>
       <Title level={2}>
         <img
-          style={{width: 40, height: 40, marginRight: 12, verticalAlign: 'bottom' }}
+          style={{ width: 40, height: 40, marginRight: 12, verticalAlign: 'bottom' }}
           src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
           alt="Ant Design"
         />
@@ -50,6 +50,9 @@ const App = () => (
         </Button>
       </Form.Item>
     </Form>
+    <Table footer={() => <Button type='dashed' size='small' style={{ width: '100%' }}>test</Button>}>
+
+    </Table>
   </>
 );
 
